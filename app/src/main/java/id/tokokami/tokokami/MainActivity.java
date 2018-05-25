@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
         }
         if (savedInstanceState == null)
         {
-            mWebView.loadUrl("http://demo.marsudi.kim");
+            mWebView.loadUrl("http://mughir.tech");
         }
 
     }
