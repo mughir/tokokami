@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
         }
         if (savedInstanceState == null)
         {
-            mWebView.loadUrl("https://mobile.tokokami.id");
+            mWebView.loadUrl("http://mughir.tech");
         }
 
     }
