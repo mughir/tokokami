@@ -12,6 +12,7 @@ import android.print.PrintJob;
 import android.print.PrintManager;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.webkit.JavascriptInterface;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
@@ -48,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
         }
         if (savedInstanceState == null)
         {
-            mWebView.loadUrl("http://mughir.tech");
+            mWebView.loadUrl("http://demo.marsudi.kim");
         }
 
     }
@@ -130,7 +131,7 @@ public class MainActivity extends AppCompatActivity {
         if (scanResult != null) {
             //here is where you get your result
              String barcode = scanResult.getContents();
-             mWebView.evaluateJavascript("hasilScan('"+ barcode +"');",null);
+             mWebView.loadUrl("javascript:hasilScan('"+ barcode +"');");
         }
     }
 
