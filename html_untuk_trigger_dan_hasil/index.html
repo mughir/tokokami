@@ -1,0 +1,23 @@
+<!doctype html>
+<html> 
+<head>
+    <title>Test Page</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head> 
+<body>
+    <h1>Test Page</h1>
+        <a id="scan" href='#'>Scan me</a>
+        <script>
+        $(document).on('click',"#scan",function(){
+			Android.scanBarcode();
+			alert('test!');
+			return false;
+        });
+		
+		function hasilScan(hasil){
+		    alert(hasil);
+		}
+
+        </script>
+</body>
+</html>
